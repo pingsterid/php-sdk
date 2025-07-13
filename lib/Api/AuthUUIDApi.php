@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pingster
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Pingster\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Pingster\ApiException;
+use Pingster\Configuration;
+use Pingster\FormDataProcessor;
+use Pingster\HeaderSelector;
+use Pingster\ObjectSerializer;
 
 /**
  * AuthUUIDApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pingster
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -130,12 +130,12 @@ class AuthUUIDApi
      *
      * Register client ID &amp; secret ID
      *
-     * @param  \OpenAPI\Client\Model\RegisterClientDto $register_client_dto register_client_dto (required)
+     * @param  \Pingster\Model\RegisterClientDto $register_client_dto register_client_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['authuuidControllerRegister'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RegisterClientResponseDto
+     * @return \Pingster\Model\RegisterClientResponseDto
      */
     public function authuuidControllerRegister($register_client_dto, string $contentType = self::contentTypes['authuuidControllerRegister'][0])
     {
@@ -148,12 +148,12 @@ class AuthUUIDApi
      *
      * Register client ID &amp; secret ID
      *
-     * @param  \OpenAPI\Client\Model\RegisterClientDto $register_client_dto (required)
+     * @param  \Pingster\Model\RegisterClientDto $register_client_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['authuuidControllerRegister'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RegisterClientResponseDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Pingster\Model\RegisterClientResponseDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function authuuidControllerRegisterWithHttpInfo($register_client_dto, string $contentType = self::contentTypes['authuuidControllerRegister'][0])
     {
@@ -185,7 +185,7 @@ class AuthUUIDApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\RegisterClientResponseDto',
+                        '\Pingster\Model\RegisterClientResponseDto',
                         $request,
                         $response,
                     );
@@ -207,7 +207,7 @@ class AuthUUIDApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\RegisterClientResponseDto',
+                '\Pingster\Model\RegisterClientResponseDto',
                 $request,
                 $response,
             );
@@ -216,7 +216,7 @@ class AuthUUIDApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RegisterClientResponseDto',
+                        '\Pingster\Model\RegisterClientResponseDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -233,7 +233,7 @@ class AuthUUIDApi
      *
      * Register client ID &amp; secret ID
      *
-     * @param  \OpenAPI\Client\Model\RegisterClientDto $register_client_dto (required)
+     * @param  \Pingster\Model\RegisterClientDto $register_client_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['authuuidControllerRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -254,7 +254,7 @@ class AuthUUIDApi
      *
      * Register client ID &amp; secret ID
      *
-     * @param  \OpenAPI\Client\Model\RegisterClientDto $register_client_dto (required)
+     * @param  \Pingster\Model\RegisterClientDto $register_client_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['authuuidControllerRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -262,7 +262,7 @@ class AuthUUIDApi
      */
     public function authuuidControllerRegisterAsyncWithHttpInfo($register_client_dto, string $contentType = self::contentTypes['authuuidControllerRegister'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RegisterClientResponseDto';
+        $returnType = '\Pingster\Model\RegisterClientResponseDto';
         $request = $this->authuuidControllerRegisterRequest($register_client_dto, $contentType);
 
         return $this->client
@@ -304,7 +304,7 @@ class AuthUUIDApi
     /**
      * Create request for operation 'authuuidControllerRegister'
      *
-     * @param  \OpenAPI\Client\Model\RegisterClientDto $register_client_dto (required)
+     * @param  \Pingster\Model\RegisterClientDto $register_client_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['authuuidControllerRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -49,12 +49,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\AuthUUIDApi(
+$apiInstance = new Pingster\Api\AuthUUIDApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$register_client_dto = new \OpenAPI\Client\Model\RegisterClientDto(); // \OpenAPI\Client\Model\RegisterClientDto
+$register_client_dto = new \Pingster\Model\RegisterClientDto(); // \Pingster\Model\RegisterClientDto
 
 try {
     $result = $apiInstance->authuuidControllerRegister($register_client_dto);

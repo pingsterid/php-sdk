@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pingster
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Pingster\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Pingster\ApiException;
+use Pingster\Configuration;
+use Pingster\FormDataProcessor;
+use Pingster\HeaderSelector;
+use Pingster\ObjectSerializer;
 
 /**
  * WppconnectApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Pingster
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,7 +143,7 @@ class WppconnectApi
      * @param  string $id id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerCheckSessionStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -158,7 +158,7 @@ class WppconnectApi
      * @param  string $id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerCheckSessionStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -363,7 +363,7 @@ class WppconnectApi
      * @param  string $id id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerCreateSession'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -378,7 +378,7 @@ class WppconnectApi
      * @param  string $id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerCreateSession'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -583,7 +583,7 @@ class WppconnectApi
      * @param  string $id id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerGetQRCode'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -598,7 +598,7 @@ class WppconnectApi
      * @param  string $id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerGetQRCode'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -803,7 +803,7 @@ class WppconnectApi
      * @param  string $id id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerLogout'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -818,7 +818,7 @@ class WppconnectApi
      * @param  string $id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerLogout'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1021,10 +1021,10 @@ class WppconnectApi
      * Operation wppconnectControllerSendMessage
      *
      * @param  string $id id (required)
-     * @param  \OpenAPI\Client\Model\SendMessageDto $send_message_dto send_message_dto (required)
+     * @param  \Pingster\Model\SendMessageDto $send_message_dto send_message_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerSendMessage'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1037,10 +1037,10 @@ class WppconnectApi
      * Operation wppconnectControllerSendMessageWithHttpInfo
      *
      * @param  string $id (required)
-     * @param  \OpenAPI\Client\Model\SendMessageDto $send_message_dto (required)
+     * @param  \Pingster\Model\SendMessageDto $send_message_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerSendMessage'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Pingster\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1085,7 +1085,7 @@ class WppconnectApi
      * Operation wppconnectControllerSendMessageAsync
      *
      * @param  string $id (required)
-     * @param  \OpenAPI\Client\Model\SendMessageDto $send_message_dto (required)
+     * @param  \Pingster\Model\SendMessageDto $send_message_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerSendMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1105,7 +1105,7 @@ class WppconnectApi
      * Operation wppconnectControllerSendMessageAsyncWithHttpInfo
      *
      * @param  string $id (required)
-     * @param  \OpenAPI\Client\Model\SendMessageDto $send_message_dto (required)
+     * @param  \Pingster\Model\SendMessageDto $send_message_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerSendMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1143,7 +1143,7 @@ class WppconnectApi
      * Create request for operation 'wppconnectControllerSendMessage'
      *
      * @param  string $id (required)
-     * @param  \OpenAPI\Client\Model\SendMessageDto $send_message_dto (required)
+     * @param  \Pingster\Model\SendMessageDto $send_message_dto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['wppconnectControllerSendMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

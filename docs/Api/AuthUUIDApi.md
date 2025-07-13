@@ -1,4 +1,4 @@
-# OpenAPI\Client\AuthUUIDApi
+# Pingster\AuthUUIDApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `authuuidControllerRegister()`
 
 ```php
-authuuidControllerRegister($register_client_dto): \OpenAPI\Client\Model\RegisterClientResponseDto
+authuuidControllerRegister($register_client_dto): \Pingster\Model\RegisterClientResponseDto
 ```
 
 Register client ID & secret ID
@@ -23,12 +23,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\AuthUUIDApi(
+$apiInstance = new Pingster\Api\AuthUUIDApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$register_client_dto = new \OpenAPI\Client\Model\RegisterClientDto(); // \OpenAPI\Client\Model\RegisterClientDto
+$register_client_dto = new \Pingster\Model\RegisterClientDto(); // \Pingster\Model\RegisterClientDto
 
 try {
     $result = $apiInstance->authuuidControllerRegister($register_client_dto);
@@ -42,11 +42,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **register_client_dto** | [**\OpenAPI\Client\Model\RegisterClientDto**](../Model/RegisterClientDto.md)|  | |
+| **register_client_dto** | [**\Pingster\Model\RegisterClientDto**](../Model/RegisterClientDto.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RegisterClientResponseDto**](../Model/RegisterClientResponseDto.md)
+[**\Pingster\Model\RegisterClientResponseDto**](../Model/RegisterClientResponseDto.md)
 
 ### Authorization
 
