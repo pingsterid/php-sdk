@@ -42,6 +42,64 @@ class Configuration
     public const BOOLEAN_FORMAT_STRING = 'string';
 
     /**
+     * Client ID untuk autentikasi kustom
+     *
+     * @var string
+     */
+    protected $clientId = '';
+
+    /**
+     * Secret ID untuk autentikasi kustom
+     *
+     * @var string
+     */
+    protected $secretId = '';
+
+    /**
+     * Sets the Client ID
+     *
+     * @param string $clientId Client ID
+     * @return $this
+     */
+    public function setClientId($clientId)
+    {
+        $this->clientId = $clientId;
+        return $this;
+    }
+
+    /**
+     * Gets the Client ID
+     *
+     * @return string
+     */
+    public function getClientId()
+    {
+        return $this->clientId;
+    }
+
+    /**
+     * Sets the Secret ID
+     *
+     * @param string $secretId Secret ID
+     * @return $this
+     */
+    public function setSecretId($secretId)
+    {
+        $this->secretId = $secretId;
+        return $this;
+    }
+
+    /**
+     * Gets the Secret ID
+     *
+     * @return string
+     */
+    public function getSecretId()
+    {
+        return $this->secretId;
+    }
+
+    /**
      * @var Configuration
      */
     private static $defaultConfiguration;
